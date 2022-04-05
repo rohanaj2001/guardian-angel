@@ -22,7 +22,8 @@ const corsOpts = {
   app.use(cors(corsOpts));
 
 app.use(bodyParser.json());
-mongoose.connect(process.env.MONGODB_URI||'mongodb+srv://rohanaj:rohanaj@cluster0.81etx.mongodb.net/guardian-angel?retryWrites=true&w=majority',{
+mongoose.connect(process.env.MONGODB_URI||'mongodb+srv://<username>:<password>@cluster0.81etx.mongodb.net/guardian-angel?retryWrites=true&w=majority',{
+//This version of code is public so I have removed some sensitive information
 
     useNewUrlParser: true,
     useUnifiedTopology: true
